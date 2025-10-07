@@ -1,0 +1,152 @@
+<!-- management.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management Page</title>
+    <!-- Bootstrap CSS (if you are using it) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+
+
+
+    <!-- Full-Width Image with Centered Text -->
+    <div class="image-text-full position-relative w-100" style="height:400px;">
+        <!-- Background Image -->
+        <img src="asset/images/Bank.jpg" alt="Shri. N Kishore Kolataya" class="img-fluid w-100 h-100"
+            style="object-fit: cover;">
+
+        <!-- Centered Text -->
+        <div class="overlay-text position-absolute top-50 start-50 translate-middle text-white text-center">
+            <h2>CONTACT-US</h2>
+            <p>Home / CONTACT-US</p>
+        </div>
+    </div>
+
+    <!-- CSS -->
+    <style>
+        .image-text-full {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .overlay-text {
+            /* background: rgba(0, 0, 0, 0.5);  */
+            padding: 15px 20px;
+            border-radius: 10px;
+        }
+    </style>
+
+
+    <!-- Management Section -->
+    <div class="container my-5">
+        <!-- Section Heading -->
+        <h2 class="text-center mb-5 text-danger">CONTACT-US</h2>
+
+
+        <!-- Contact Us Section -->
+<div class="container my-5">
+
+    <div class="row g-4 align-items-start">
+        <!-- Left Side: Contact Info -->
+        <div class="col-md-6">
+            <div class="card p-4 shadow-sm h-100">
+                <h4 class="mb-4">Our Contact Details</h4>
+                <p><i class="fas fa-map-marker-alt me-2 text-primary"></i>
+                    <strong>Address:</strong> Hanamasagar Urban Co-Operative Bank Ltd,<br>
+                    College Road, APMC Yard, Hanamasagar,<br>
+                    Tq-Kushtagi, Dist- Koppal, Karnataka-583 281
+                </p>
+                <p><i class="fas fa-phone me-2 text-primary"></i>
+                    <strong>Phone:</strong> 08536 270230
+                </p>
+                <p><i class="fas fa-envelope me-2 text-primary"></i>
+                    <strong>Email:</strong> banking@hucobank.com
+                </p>
+                <p><i class="fas fa-clock me-2 text-primary"></i>
+                    <strong>Bank Timings:</strong> Mon–Sat: 10:00 AM – 05:00 PM<br>
+                    Lunch Time: 02:00 PM – 03:30 PM<br>
+                    Closed on 2nd & 4th Saturday & all Sundays
+                </p>
+            </div>
+        </div>
+
+        <!-- Right Side: Google Map -->
+        <div class="col-md-6">
+            <div class="card p-0 shadow-sm h-100">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_LINK" 
+                    width="100%" height="100%" style="border:0; min-height:400px;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional CSS -->
+<style>
+.card {
+    border-radius: 10px;
+    background: #fefefe;
+}
+p i {
+    font-size: 1.2rem;
+}
+</style>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+          
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap JS (if you are using it) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Load Navbar and Footer using JS -->
+    <script>
+        // Load navbar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>

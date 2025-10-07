@@ -1,0 +1,735 @@
+<!-- management.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management Page</title>
+    <!-- Bootstrap CSS (if you are using it) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+
+
+
+    <!-- Full-Width Image with Centered Text -->
+    <div class="image-text-full position-relative w-100" style="height:400px;">
+        <!-- Background Image -->
+        <img src="asset/images/Bank.jpg" alt="Shri. N Kishore Kolataya" class="img-fluid w-100 h-100"
+            style="object-fit: cover;">
+
+        <!-- Centered Text -->
+        <div class="overlay-text position-absolute top-50 start-50 translate-middle text-white text-center">
+            <h2>LOANS</h2>
+            <p>Home / LOANS</p>
+        </div>
+    </div>
+
+    <!-- CSS -->
+    <style>
+        .image-text-full {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .overlay-text {
+            /* background: rgba(0, 0, 0, 0.5);  */
+            padding: 15px 20px;
+            border-radius: 10px;
+        }
+    </style>
+
+
+
+
+<!-- ===== Loans & Advances – Luxury Minimalistic Cards ===== -->
+<section class="py-5" style="background:#f9fafb; font-family:'Poppins',sans-serif;">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-3" style="color:#111827;">Loans & Advances (ಸಾಲ)</h2>
+    <p class="text-muted mb-5">With effect from 01/01/2024</p>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Housing Loan -->
+      <div class="col-md-3">
+        <div class="minimal-card p-4 rounded-4 shadow-sm">
+          <i class="fas fa-home fa-2x mb-3 text-primary"></i>
+          <h5 class="fw-bold">Housing Loan</h5>
+          <p class="text-muted mb-2">For building or buying your home</p>
+          <span class="rate bg-primary text-white rounded-pill px-3 py-1">9.50% p.a</span>
+        </div>
+      </div>
+
+      <!-- Vehicle Loan -->
+      <div class="col-md-3">
+        <div class="minimal-card p-4 rounded-4 shadow-sm">
+          <i class="fas fa-car fa-2x mb-3 text-success"></i>
+          <h5 class="fw-bold">Vehicle Loan</h5>
+          <p class="text-muted mb-2">For new or pre-owned vehicles</p>
+          <span class="rate bg-success text-white rounded-pill px-3 py-1">11.00% p.a</span>
+        </div>
+      </div>
+
+      <!-- Business Loan -->
+      <div class="col-md-3">
+        <div class="minimal-card p-4 rounded-4 shadow-sm">
+          <i class="fas fa-briefcase fa-2x mb-3 text-warning"></i>
+          <h5 class="fw-bold">Business Loan</h5>
+          <p class="text-muted mb-2">Boost your business with funds</p>
+          <span class="rate bg-warning text-white rounded-pill px-3 py-1">12.50% p.a</span>
+        </div>
+      </div>
+
+      <!-- Jewel Loan -->
+      <div class="col-md-3">
+        <div class="minimal-card p-4 rounded-4 shadow-sm">
+          <i class="fas fa-gem fa-2x mb-3 text-danger"></i>
+          <h5 class="fw-bold">Jewel Loan</h5>
+          <p class="text-muted mb-2">Instant loan against gold</p>
+          <span class="rate bg-danger text-white rounded-pill px-3 py-1">10.75% p.a</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CSS Styling ===== -->
+<style>
+.minimal-card {
+  background:#fff;
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+.minimal-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+.rate {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== Loans & Advances – Sliding Panels ===== -->
+<section class="py-5" style="background:#f0f4ff; font-family:'Poppins',sans-serif;">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4" style="color:#1e3a8a;">Loans & Advances (ಸಾಲ)</h2>
+    <p class="text-muted mb-5">With effect from 01/01/2024</p>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Housing Loan -->
+      <div class="col-md-3">
+        <div class="slide-card position-relative rounded-4 shadow-lg overflow-hidden">
+          <div class="slide-front p-4 text-center">
+            <i class="fas fa-home fa-2x mb-3 text-primary"></i>
+            <h5>Housing Loan</h5>
+          </div>
+          <div class="slide-back p-4 text-center">
+            <p class="rate mb-2">9.50% p.a</p>
+            <p class="text-muted">Flexible repayment for buying or building your dream home.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vehicle Loan -->
+      <div class="col-md-3">
+        <div class="slide-card position-relative rounded-4 shadow-lg overflow-hidden">
+          <div class="slide-front p-4 text-center">
+            <i class="fas fa-car fa-2x mb-3 text-success"></i>
+            <h5>Vehicle Loan</h5>
+          </div>
+          <div class="slide-back p-4 text-center">
+            <p class="rate mb-2">11.00% p.a</p>
+            <p class="text-muted">Quick financing for 2/4 wheelers with flexible EMI options.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Business Loan -->
+      <div class="col-md-3">
+        <div class="slide-card position-relative rounded-4 shadow-lg overflow-hidden">
+          <div class="slide-front p-4 text-center">
+            <i class="fas fa-briefcase fa-2x mb-3 text-warning"></i>
+            <h5>Business Loan</h5>
+          </div>
+          <div class="slide-back p-4 text-center">
+            <p class="rate mb-2">12.50% p.a</p>
+            <p class="text-muted">Funding support for small & medium businesses.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jewel Loan -->
+      <div class="col-md-3">
+        <div class="slide-card position-relative rounded-4 shadow-lg overflow-hidden">
+          <div class="slide-front p-4 text-center">
+            <i class="fas fa-gem fa-2x mb-3 text-danger"></i>
+            <h5>Jewel Loan</h5>
+          </div>
+          <div class="slide-back p-4 text-center">
+            <p class="rate mb-2">10.75% p.a</p>
+            <p class="text-muted">Instant cash against gold jewelry. Flexible tenure.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CSS Styling ===== -->
+<style>
+.slide-card {
+  background:#fff;
+  border:1px solid #e5e7eb;
+  cursor:pointer;
+  height:180px;
+  transition: transform 0.3s;
+  position: relative;
+}
+.slide-front, .slide-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0; left:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+.slide-back {
+  background:#6366f1;
+  color:#fff;
+  transform: translateX(100%);
+}
+.slide-card:hover .slide-back {
+  transform: translateX(0);
+}
+.slide-card:hover .slide-front {
+  transform: translateX(-100%);
+}
+.rate {
+  font-weight:600;
+  font-size:0.95rem;
+}
+</style>
+
+
+
+
+
+
+
+
+<!-- ===== Loans & Advances – Circular Progress Glow Cards ===== -->
+<section class="py-5" style="background:#e0e7ff; font-family:'Poppins',sans-serif;">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4" style="color:#1e3a8a;">Loans & Advances (ಸಾಲ)</h2>
+    <p class="text-muted mb-5">With effect from 01/01/2024</p>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Housing Loan -->
+      <div class="col-md-3">
+        <div class="circle-card p-4 rounded-4 shadow-lg position-relative">
+          <svg class="progress-circle mb-3" width="120" height="120">
+            <circle cx="60" cy="60" r="54" stroke="#d1d5db" stroke-width="12" fill="none"/>
+            <circle class="progress" cx="60" cy="60" r="54" stroke="#6366f1" stroke-width="12" fill="none" stroke-linecap="round"/>
+          </svg>
+          <h5 class="text-white mb-1">Housing Loan</h5>
+          <p class="rate text-white mb-0">9.50% p.a</p>
+        </div>
+      </div>
+
+      <!-- Vehicle Loan -->
+      <div class="col-md-3">
+        <div class="circle-card p-4 rounded-4 shadow-lg position-relative">
+          <svg class="progress-circle mb-3" width="120" height="120">
+            <circle cx="60" cy="60" r="54" stroke="#d1d5db" stroke-width="12" fill="none"/>
+            <circle class="progress" cx="60" cy="60" r="54" stroke="#10b981" stroke-width="12" fill="none" stroke-linecap="round"/>
+          </svg>
+          <h5 class="text-white mb-1">Vehicle Loan</h5>
+          <p class="rate text-white mb-0">11.00% p.a</p>
+        </div>
+      </div>
+
+      <!-- Business Loan -->
+      <div class="col-md-3">
+        <div class="circle-card p-4 rounded-4 shadow-lg position-relative">
+          <svg class="progress-circle mb-3" width="120" height="120">
+            <circle cx="60" cy="60" r="54" stroke="#d1d5db" stroke-width="12" fill="none"/>
+            <circle class="progress" cx="60" cy="60" r="54" stroke="#facc15" stroke-width="12" fill="none" stroke-linecap="round"/>
+          </svg>
+          <h5 class="text-white mb-1">Business Loan</h5>
+          <p class="rate text-white mb-0">12.50% p.a</p>
+        </div>
+      </div>
+
+      <!-- Jewel Loan -->
+      <div class="col-md-3">
+        <div class="circle-card p-4 rounded-4 shadow-lg position-relative">
+          <svg class="progress-circle mb-3" width="120" height="120">
+            <circle cx="60" cy="60" r="54" stroke="#d1d5db" stroke-width="12" fill="none"/>
+            <circle class="progress" cx="60" cy="60" r="54" stroke="#ef4444" stroke-width="12" fill="none" stroke-linecap="round"/>
+          </svg>
+          <h5 class="text-white mb-1">Jewel Loan</h5>
+          <p class="rate text-white mb-0">10.75% p.a</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CSS Styling ===== -->
+<style>
+.circle-card {
+  background: linear-gradient(135deg, #6366f1, #818cf8);
+  cursor:pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.circle-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(99,102,241,0.6), 0 12px 25px rgba(0,0,0,0.1);
+}
+.progress-circle {
+  transform: rotate(-90deg);
+}
+.progress {
+  stroke-dasharray: 339.292; /* 2 * PI * r (54) */
+  stroke-dashoffset: 339.292;
+  transition: stroke-dashoffset 1s ease;
+}
+.rate {
+  font-weight:600;
+  font-size:0.95rem;
+}
+</style>
+
+<!-- ===== JS Animation for Circular Progress ===== -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.circle-card').forEach(card => {
+    const circle = card.querySelector('.progress');
+    const rate = parseFloat(card.querySelector('.rate').innerText);
+    const maxRate = 20; // for percentage calculation
+    const offset = 339.292 * (1 - rate / maxRate);
+    setTimeout(() => {
+      circle.style.strokeDashoffset = offset;
+    }, 200);
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+<!-- ===== Loans & Advances – Tab Cards ===== -->
+<section class="py-5" style="background:#f0f4ff; font-family:'Poppins',sans-serif;">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4" style="color:#1e3a8a;">Loans & Advances (ಸಾಲ)</h2>
+    <p class="text-muted mb-5">With effect from 01/01/2024</p>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Housing Loan -->
+      <div class="col-md-3">
+        <div class="tab-card p-4 rounded-4 shadow-lg text-center">
+          <i class="fas fa-home fa-2x mb-3 text-primary"></i>
+          <h5>Housing Loan</h5>
+
+          <!-- Tabs -->
+          <ul class="tab-list d-flex justify-content-around mt-3 mb-2 list-unstyled">
+            <li class="tab-item active" data-tab="rate1">Rate</li>
+            <li class="tab-item" data-tab="eligibility1">Eligibility</li>
+            <li class="tab-item" data-tab="tenure1">Tenure</li>
+          </ul>
+
+          <!-- Tab Content -->
+          <div class="tab-content">
+            <div id="rate1" class="tab-pane active">9.50% p.a</div>
+            <div id="eligibility1" class="tab-pane">Salaried & Self-Employed</div>
+            <div id="tenure1" class="tab-pane">Up to 20 Years</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vehicle Loan -->
+      <div class="col-md-3">
+        <div class="tab-card p-4 rounded-4 shadow-lg text-center">
+          <i class="fas fa-car fa-2x mb-3 text-success"></i>
+          <h5>Vehicle Loan</h5>
+
+          <ul class="tab-list d-flex justify-content-around mt-3 mb-2 list-unstyled">
+            <li class="tab-item active" data-tab="rate2">Rate</li>
+            <li class="tab-item" data-tab="eligibility2">Eligibility</li>
+            <li class="tab-item" data-tab="tenure2">Tenure</li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="rate2" class="tab-pane active">11.00% p.a</div>
+            <div id="eligibility2" class="tab-pane">Salaried & Self-Employed</div>
+            <div id="tenure2" class="tab-pane">Up to 7 Years</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Business Loan -->
+      <div class="col-md-3">
+        <div class="tab-card p-4 rounded-4 shadow-lg text-center">
+          <i class="fas fa-briefcase fa-2x mb-3 text-warning"></i>
+          <h5>Business Loan</h5>
+
+          <ul class="tab-list d-flex justify-content-around mt-3 mb-2 list-unstyled">
+            <li class="tab-item active" data-tab="rate3">Rate</li>
+            <li class="tab-item" data-tab="eligibility3">Eligibility</li>
+            <li class="tab-item" data-tab="tenure3">Tenure</li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="rate3" class="tab-pane active">12.50% p.a</div>
+            <div id="eligibility3" class="tab-pane">SME Owners</div>
+            <div id="tenure3" class="tab-pane">Up to 10 Years</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jewel Loan -->
+      <div class="col-md-3">
+        <div class="tab-card p-4 rounded-4 shadow-lg text-center">
+          <i class="fas fa-gem fa-2x mb-3 text-danger"></i>
+          <h5>Jewel Loan</h5>
+
+          <ul class="tab-list d-flex justify-content-around mt-3 mb-2 list-unstyled">
+            <li class="tab-item active" data-tab="rate4">Rate</li>
+            <li class="tab-item" data-tab="eligibility4">Eligibility</li>
+            <li class="tab-item" data-tab="tenure4">Tenure</li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="rate4" class="tab-pane active">10.75% p.a</div>
+            <div id="eligibility4" class="tab-pane">Anyone with gold collateral</div>
+            <div id="tenure4" class="tab-pane">Up to 2 Years</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CSS Styling ===== -->
+<style>
+.tab-card {
+  background:#fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor:pointer;
+}
+.tab-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(99,102,241,0.2);
+}
+.tab-list .tab-item {
+  font-weight:600;
+  font-size:0.85rem;
+  padding:5px 10px;
+  cursor:pointer;
+  border-bottom:2px solid transparent;
+  transition: all 0.3s;
+}
+.tab-list .tab-item.active {
+  border-bottom:2px solid #6366f1;
+  color:#6366f1;
+}
+.tab-pane { display:none; font-size:0.9rem; margin-top:5px; }
+.tab-pane.active { display:block; }
+.rate { font-weight:600; font-size:0.95rem; }
+</style>
+
+<!-- ===== JS for Tabs ===== -->
+<script>
+document.querySelectorAll('.tab-card').forEach(card => {
+  const tabs = card.querySelectorAll('.tab-item');
+  const panes = card.querySelectorAll('.tab-pane');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      panes.forEach(p => p.classList.remove('active'));
+      const target = card.querySelector('#' + tab.getAttribute('data-tab'));
+      target.classList.add('active');
+    });
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== Loans & Advances – Diagonal Split + Icon Highlight + Badge Glow ===== -->
+<section class="py-5" style="background:#f0f4ff; font-family:'Poppins',sans-serif;">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4" style="color:#1e3a8a;">Loans & Advances (ಸಾಲ)</h2>
+    <p class="text-muted mb-5">With effect from 01/01/2024</p>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Housing Loan -->
+      <div class="col-md-3">
+        <div class="diagonal-card position-relative p-4 rounded-4 shadow-lg">
+          <div class="icon-bg p-3 rounded-circle position-absolute top-0 start-0 translate-middle">
+            <i class="fas fa-home fa-lg text-white"></i>
+          </div>
+          <h5 class="mt-5 text-white">Housing Loan</h5>
+          <div class="rate-badge">9.50% p.a</div>
+        </div>
+      </div>
+
+      <!-- Vehicle Loan -->
+      <div class="col-md-3">
+        <div class="diagonal-card position-relative p-4 rounded-4 shadow-lg">
+          <div class="icon-bg p-3 rounded-circle position-absolute top-0 start-0 translate-middle">
+            <i class="fas fa-car fa-lg text-white"></i>
+          </div>
+          <h5 class="mt-5 text-white">Vehicle Loan</h5>
+          <div class="rate-badge">11.00% p.a</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CSS Styling ===== -->
+<style>
+.diagonal-card {
+  background: linear-gradient(135deg,#6366f1 50%,#818cf8 50%);
+  border-radius:20px;
+  position:relative;
+  overflow:hidden;
+  cursor:pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding-top:50px;
+}
+.diagonal-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(99,102,241,0.5),0 0 25px rgba(99,102,241,0.4);
+}
+.icon-bg {
+  background: #10b981;
+  box-shadow: 0 0 15px #10b981;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:50px;
+  height:50px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.diagonal-card:hover .icon-bg {
+  transform: scale(1.2);
+  box-shadow: 0 0 25px #10b981,0 0 35px #10b981;
+}
+.rate-badge {
+  display:inline-block;
+  margin-top:10px;
+  background: #facc15;
+  padding:5px 10px;
+  border-radius:12px;
+  color:#1f2937;
+  font-weight:600;
+  box-shadow: 0 0 10px #facc15;
+}
+h5 { margin-top:20px; font-weight:600; color:white; }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Management Section -->
+    <div class="container my-5">
+        <!-- Section Heading -->
+        <h2 class="text-center mb-5 text-danger">LOANS</h2>
+
+      
+
+
+
+<!-- Interest Rates Section -->
+<div class="container my-5">
+    <h2 class="text-center mb-5">Interest Rates ( ಸಾಲದಮೆಲಿನ ಬಡ್ಡಿ ದರಗಳು)</h2>
+
+
+
+    <!-- Loans Table -->
+    <div class="card p-3 mb-5 shadow-sm">
+        <h4 class="text-center mb-3">Loans & Advances (ಸಾಲ)</h4>
+        <p class="text-center"><small>With effect from 01/01/2024</small></p>
+        <table class="table table-bordered table-striped">
+            <thead class="table-light">
+                <tr>
+                    <th>Loan Type / ಸಾಲದ ನಮುನೆ</th>
+                    <th>Interest Rate / ಬಡ್ಡಿ ದರ (%/pa)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Housing Loan</td><td>9.50</td></tr>
+                <tr><td>Mortgage Loan</td><td>13.00</td></tr>
+                <tr><td>Mortgage OD</td><td>13.00</td></tr>
+                <tr><td>Jewel Loan</td><td>10.75</td></tr>
+                <tr><td>Vehicle Loan</td><td>11.00</td></tr>
+                <tr><td>Business Loan</td><td>12.50</td></tr>
+                <tr><td>Surity Loan</td><td>14.50</td></tr>
+                <tr><td>Commercial Building Loan</td><td>13.50</td></tr>
+                <tr><td>Consumer Durable Loan</td><td>13.00</td></tr>
+                <tr><td>House Repairs Loan</td><td>12.50</td></tr>
+                <tr><td>Hypothecation Loans</td><td>13.50</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Optional CSS -->
+<style>
+.card table th, .card table td {
+    text-align: center;
+    vertical-align: middle;
+}
+.card {
+    background: #fefefe;
+    border-radius: 10px;
+}
+</style>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap JS (if you are using it) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Load Navbar and Footer using JS -->
+    <script>
+        // Load navbar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>

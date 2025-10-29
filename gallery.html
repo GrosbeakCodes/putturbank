@@ -17,10 +17,12 @@
 
 
     <!-- Full-Width Image with Centered Text -->
-    <div class="image-text-full position-relative w-100" style="height:400px;">
+
+
+        <div class="image-text-full position-relative">
         <!-- Background Image -->
-        <img src="asset/images/Bank.jpg" alt="Shri. N Kishore Kolataya" class="img-fluid w-100 h-100"
-            style="object-fit: cover;">
+        <img src="asset/images/banners/gallery.png" alt="Shri. N Kishore Kolataya" class="img-fluid"
+            style="object-fit: cover; width: 100%;height: 100%;">
 
         <!-- Centered Text -->
         <div class="overlay-text position-absolute top-50 start-50 translate-middle text-white text-center">
@@ -47,103 +49,116 @@
     <!-- Management Section -->
     <div class="container my-5">
         <!-- Section Heading -->
-        <h2 class="text-center mb-5 text-danger">OUR GALLERY</h2>
-
-<!-- Image Gallery Section -->
-<div class="container my-5">
-
-    <div class="row g-3">
-        <!-- 12 Images, same source -->
-           <div class="col-md-4">
-            <img src="asset/images/gallery/p15.png" class="img-fluid rounded gallery-img" 
-                 alt="Bank Image" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/gallery/p15.png">
-        </div>
-         <div class="col-md-4">
-            <img src="asset/images/gallery/p16.png" class="img-fluid rounded gallery-img" 
-                 alt="Bank Image" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/Bank.jpg">
-        </div>
-         <div class="col-md-4">
-            <img src="asset/images/gallery/p17.png" class="img-fluid rounded gallery-img" 
-                 alt="Bank Image" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/Bank.jpg">
-        </div>
-        <div class="col-md-4">
-            <img src="asset/images/gallery/p1.png" class="img-fluid rounded gallery-img" 
-                 alt="Bank Image" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/Bank.jpg">
-        </div>
-        <div class="col-md-4">
-            <img src="asset/images/gallery/p2.jpeg" class="img-fluid rounded gallery-img" 
-                 alt="Bank Image" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/Bank.jpg">
-        </div>
-        <div class="col-md-4">
-            <img src="asset/images/gallery/p4.jpeg" class="img-fluid rounded gallery-img" 
-                 alt="Bank Image" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/Bank.jpg">
-        </div>
-
-        <div class="col-md-4">
-            <img src="asset/images/gallery/p5.jpeg" class="img-fluid rounded gallery-img" 
-                 alt="Bank Image" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/Bank.jpg">
-        </div>
-     
-        <div class="col-md-4">
-            <img src="asset/images/gallery/p6.png" class="img-fluid rounded gallery-img" 
-                 alt="Bank Image" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/Bank.jpg">
-        </div>
-
-      
-     
-        <div class="col-md-4">
-            <img src="asset/images/gallery/p9.jpeg" class="img-fluid rounded gallery-img" 
-                 alt="Bank Image" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/Bank.jpg">
-        </div>
-
-        <div class="col-md-4">
-            <img src="asset/images/gallery/p10.png" class="img-fluid rounded gallery-img" 
-                 alt="Bank Image" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/Bank.jpg">
-        </div>
-       
-        <div class="col-md-4">
-            <img src="asset/images/gallery/p12.png" class="img-fluid rounded gallery-img" 
-                 alt="Bank Image" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/Bank.jpg">
-        </div>
-         <div class="col-md-4">
-            <img src="asset/images/gallery/p14.png" class="img-fluid rounded gallery-img" 
-                 alt="Bank Image" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/Bank.jpg">
-        </div>
-       
-         <div class="col-md-4">
-            <img src="asset/images/gallery/p18.png" class="img-fluid rounded gallery-img" 
-                 alt="Bank Image" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/Bank.jpg">
-        </div>
-    
-    </div>
-</div>
-
-<!-- Modal for Lightbox -->
-<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content bg-transparent border-0">
-      <div class="modal-body p-0">
-        <img src="" id="modal-img" class="img-fluid rounded w-100">
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- JS for Lightbox -->
-<script>
-const imageModal = document.getElementById('imageModal');
-const modalImg = document.getElementById('modal-img');
-document.querySelectorAll('.gallery-img').forEach(img => {
-    img.addEventListener('click', () => {
-        modalImg.src = img.dataset.bsImg;
-    });
-});
-</script>
+        <!-- <h2 class="text-center mb-5 text-danger">OUR GALLERY</h2> -->
 
 
 
+        <div class="text-center my-5" data-aos="fade-up">
+            <h2 class="fw-bold mb-5">
+                <span style="color:#dc3545; text-shadow:2px 2px 4px rgba(220,53,69,0.3);">OUR </span>
+                <span style="color:#6610f2; text-shadow:2px 2px 4px rgba(102,16,242,0.3);">GALLERY</span>
+            </h2>
+        </div>
 
-  
+        <!-- Image Gallery Section -->
+        <div class="container my-5">
+
+            <div class="row g-3">
+                <div class="col-md-4" style="overflow:hidden; border-radius:12px;">
+                    <img src="asset/images/gallery/p15.png" class="img-fluid gallery-img shadow-sm" alt="Bank Image"
+                        data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/gallery/p15.png">
+                </div>
+                <div class="col-md-4" style="overflow:hidden; border-radius:12px;">
+                    <img src="asset/images/gallery/p16.png" class="img-fluid gallery-img shadow-sm" alt="Bank Image"
+                        data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/gallery/p16.png">
+                </div>
+                <div class="col-md-4" style="overflow:hidden; border-radius:12px;">
+                    <img src="asset/images/gallery/p17.png" class="img-fluid gallery-img shadow-sm" alt="Bank Image"
+                        data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/gallery/p17.png">
+                </div>
+                <div class="col-md-4" style="overflow:hidden; border-radius:12px;">
+                    <img src="asset/images/gallery/p1.png" class="img-fluid gallery-img shadow-sm" alt="Bank Image"
+                        data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/gallery/p1.png">
+                </div>
+                <div class="col-md-4" style="overflow:hidden; border-radius:12px;">
+                    <img src="asset/images/gallery/p2.jpeg" class="img-fluid gallery-img shadow-sm" alt="Bank Image"
+                        data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/gallery/p2.jpeg">
+                </div>
+                <div class="col-md-4" style="overflow:hidden; border-radius:12px;">
+                    <img src="asset/images/gallery/p4.jpeg" class="img-fluid gallery-img shadow-sm" alt="Bank Image"
+                        data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/gallery/p4.jpeg">
+                </div>
+                <div class="col-md-4" style="overflow:hidden; border-radius:12px;">
+                    <img src="asset/images/gallery/p5.jpeg" class="img-fluid gallery-img shadow-sm" alt="Bank Image"
+                        data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/gallery/p5.jpeg">
+                </div>
+                <div class="col-md-4" style="overflow:hidden; border-radius:12px;">
+                    <img src="asset/images/gallery/p6.png" class="img-fluid gallery-img shadow-sm" alt="Bank Image"
+                        data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/gallery/p6.png">
+                </div>
+                <div class="col-md-4" style="overflow:hidden; border-radius:12px;">
+                    <img src="asset/images/gallery/p9.jpeg" class="img-fluid gallery-img shadow-sm" alt="Bank Image"
+                        data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/gallery/p9.jpeg">
+                </div>
+                <div class="col-md-4" style="overflow:hidden; border-radius:12px;">
+                    <img src="asset/images/gallery/p10.png" class="img-fluid gallery-img shadow-sm" alt="Bank Image"
+                        data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/gallery/p10.png">
+                </div>
+                <div class="col-md-4" style="overflow:hidden; border-radius:12px;">
+                    <img src="asset/images/gallery/p12.png" class="img-fluid gallery-img shadow-sm" alt="Bank Image"
+                        data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/gallery/p12.png">
+                </div>
+                <div class="col-md-4" style="overflow:hidden; border-radius:12px;">
+                    <img src="asset/images/gallery/p14.png" class="img-fluid gallery-img shadow-sm" alt="Bank Image"
+                        data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/gallery/p14.png">
+                </div>
+                <div class="col-md-4" style="overflow:hidden; border-radius:12px;">
+                    <img src="asset/images/gallery/p18.png" class="img-fluid gallery-img shadow-sm" alt="Bank Image"
+                        data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="asset/images/gallery/p18.png">
+                </div>
+            </div>
+
+            <style>
+                .gallery-img {
+                    border-radius: 12px;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    cursor: pointer;
+                }
+
+                .gallery-img:hover {
+                    transform: scale(1.05);
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+                }
+            </style>
+
+        </div>
+
+        <!-- Modal for Lightbox -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="modal-body p-0">
+                        <img src="" id="modal-img" class="img-fluid rounded w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JS for Lightbox -->
+        <script>
+            const imageModal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modal-img');
+            document.querySelectorAll('.gallery-img').forEach(img => {
+                img.addEventListener('click', () => {
+                    modalImg.src = img.dataset.bsImg;
+                });
+            });
+        </script>
+
+
+
+
+
 
 
 

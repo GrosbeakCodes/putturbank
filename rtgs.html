@@ -1,0 +1,159 @@
+<!-- management.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management Page</title>
+    <!-- Bootstrap CSS (if you are using it) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+
+
+
+    <!-- Full-Width Image with Centered Text -->
+        <div class="image-text-full position-relative">
+        <img src="asset/images/Rtgs_main_page1.jpg" alt="Shri. N Kishore Kolataya" class="img-fluid"
+            style="object-fit: cover; width: 100%; height: 100%;">
+        <div class="overlay-text position-absolute top-50 start-50 translate-middle text-dark text-center">
+            <h2>RTGS/NEFT</h2>
+            <p>Home / RTGS/NEFT</p>
+        </div>
+    </div>
+
+    <!-- CSS -->
+    <style>
+        .image-text-full {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .overlay-text {
+            /* background: rgba(0, 0, 0, 0.5);  */
+            padding: 15px 20px;
+            border-radius: 10px;
+        }
+    </style>
+
+
+    <!-- Management Section -->
+    <div class="container my-5">
+        <!-- Section Heading -->
+        <!-- <h2 class="text-center mb-5 text-danger">RTGS/NEFT</h2> -->
+
+  <div class="text-center my-5" data-aos="fade-up">
+        <h2 class="fw-bold mb-5">
+            <span style="color:#dc3545; text-shadow:2px 2px 4px rgba(220,53,69,0.3);">RTGS </span>
+            <span style="color:#6610f2; text-shadow:2px 2px 4px rgba(102,16,242,0.3);">/NEFT</span>
+        </h2>
+    </div>
+        <!-- Text-Image Section -->
+        <div class="container my-5">
+            <div class="row align-items-center">
+                <!-- Left Side: Text -->
+                <div class="col-md-6">
+                    <!-- <h2>Why Choose Our Bank?</h2> -->
+                    <ul class="list-unstyled mt-3">
+                        <li class="mb-3" style="text-align: justify;">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            The acronym 'RTGS' stands for Real Time Gross Settlement, which can be defined as the
+                            continuous (real-time) settlement of funds transfers individually on an order-by-order basis
+                            (without netting). 'Real Time' means the processing of instructions at the time they are
+                            received rather than at some later time.
+                        </li>
+                        <li class="mb-3" style="text-align: justify;">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Electronic Funds Transfer (NEFT) is a nation-wide payment system facilitating one-to-one
+                            funds transfer. Under this Scheme, individuals, firms and corporate can electronically
+                            transfer funds from any bank branch to any individual, firm or corporate having an account
+                            with any other bank branch in the country participating in the Scheme.
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Customers can transfer funds above Rs. 4 lakhs to any bank account in India on same day.
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Cost of service as per service charges.
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Timings for Transaction - Bank's Business hours.
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            There is a limit of below Rs. 4 lakhs per transaction.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Side: Image -->
+                <div class="col-md-6 text-center">
+                    <img src="asset/images/gallery/p5.jpeg" alt="Bank Image" class="img-fluid rounded"
+                        style="max-height:400px; object-fit:cover;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional CSS for styling -->
+        <style>
+            ul li {
+                font-size: 1.1rem;
+            }
+        </style>
+
+        <!-- Font Awesome for check icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap JS (if you are using it) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Load Navbar and Footer using JS -->
+    <script>
+        // Load navbar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>
